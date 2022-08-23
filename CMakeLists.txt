@@ -1,4 +1,4 @@
-project(ipxhole VERSION 21.0)
+project(ipxhole VERSION 22.9)
 
 include(my_boost)
 include(my_git)
@@ -12,7 +12,6 @@ target_link_libraries (${PROJECT_NAME}
 			gtcommon
 			vx
 			gtlan
-			vxsqlite
 			ipx
 )
 target_compile_definitions(${PROJECT_NAME} PRIVATE GIT_REVISION="${${PROJECT_NAME}_GIT_REVISION}" )
