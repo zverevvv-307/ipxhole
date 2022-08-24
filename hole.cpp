@@ -37,11 +37,11 @@ void Hole::handle_timeout(const boost::system::error_code& error)
 
 bool Hole::start()
 {
-  std::string local_address;
+  std::string local_address=;
   if (!mcast_.open([](const std::string& e) { std::cerr << "MCAST: " << e << std::endl; }, local_address.c_str()))
     return false;
 
-  bool nnov_nocodec;
+  bool nnov_nocodec=;
   if (!ipx_.open(!nnov_nocodec, [](const std::string& e) { std::cerr << "IPX: " << e << std::endl; }))
     return false;
 
